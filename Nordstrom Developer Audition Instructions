@@ -1,0 +1,33 @@
+Thank you for interviewing with the Personalization team at Nordstrom!  We hope that you find the process enjoyable.
+
+We have designed a project for you to work on at home so that you can show us what an awesome developer you are. We really appreciate you giving us your free time!
+
+This project was designed to mimic a project that could come to the team (in fact it has, check out the product page at nordstrom.com). We want you to get an idea of what kind of work we do.  You should spend about 4 - 5 hours on the project.
+
+ When we evaluate your work we will focus on your design, implementation and how you navigate the existing code base. We believe you should leave the code cleaner than you found it. Everything you write should be production ready.  Be prepared to defend your decisions.
+
+
+What you will need:
+
+Access to a windows PC with Visual Studio 2010 or greater with MVC 4 installed.  If you have any problems meeting these requirements or if you cannot run the solution please let us know immediately.
+
+
+The User Story:
+
+As a customer on Nordstrom.com I would like to receive product recommendations that are similar to a product that I find interesting.
+
+
+Scenario:
+
+Given a customer on nordstrom.com
+When viewing a product detail page
+Then recommendations similar to the product I am viewing should appear.
+
+
+Implementation detail:
+
+Add recommendations to the product page. See the UI comps for the design.  There is an api in the project that you can call to get recommendations (the results are mocked). The api is invoked like this: /api/recommendation?styleid=styleidhere. Each result item has a Image_Url property. Follow this format: http://g.nordstromimage.com/imagegallery/store/product/medium/image_url.jpg replacing the image_url part with the property to get the images. 
+
+
+
+

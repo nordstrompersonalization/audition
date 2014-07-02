@@ -1,0 +1,32 @@
+﻿@model NordstromAudition.Models.SearchResults
+
+@{
+    ViewBag.Title = "Search Results";
+}
+
+<div class="search-results-container">
+    @foreach (var result in Model.Results)
+    {
+        var url = System.Configuration.ConfigurationManager.AppSettings["ImageUrlBase"];
+        var imgThumb = string.Format(url, "medium", result.Image_Url);
+        <div class="search-result-container" data-id="@result.Style_Id">
+            <img src="@imgThumb" alt="@result.Style_Id" />
+            <div>
+                <div>@result.Formatted_Regular_Price</div>
+                <div>@result.Name</div>
+                <div>@result.Brand</div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        $(".search-result-container").click(function () {
+            var style_id = $(this).data("id");
+            window.location = "/product/detail/" + style_id;
+        });
+    });
+ 
+  </script>

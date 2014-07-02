@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="float-left">
+                <img src="../../Images/logo.gif" alt="Nordstrom" />
+            </div>
+            <div class="float-right">
+                <a href="http://about.nordstrom.com/careers/#/about-us/main" title="Why work with us?">Why work with us?</a>
+            </div>
+            <div></div>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <table>
+        <tr class="table-header-row">
+           <th><strong>CUSTOMER SERVICE</strong></th>
+           <th><strong>MORE TO EXPLORE</strong></th>
+           <th><strong>ABOUT US</h1></strong>
+           <th><strong>SITE SPOTLIGHT</strong></th>
+        </tr>
+        <tr>
+            <td>Customer Service</td>
+            <td>Gift Cards</td>
+            <td>About Us</td>
+            <td>CHANEL</td>
+        </tr>
+        <tr>
+            <td>Pay Bill Online</td>
+            <td>Apply for a Nordstrom Card</td>
+            <td>Careers</td>
+            <td>Handbags</td>
+        </tr>
+        <tr>
+            <td>Check Order Status</td>
+            <td>Nordstrom Reqwards</td>
+            <td>Nordstrom Rack</td>
+            <td>Prom Dresses</td>
+        </tr>
+        <tr>
+            <td>Shipping Options and Charges</td>
+            <td>Find Your True Fit</td>
+            <td>HauteLook</td>
+            <td>Sports</td>
+        </tr>
+        </table>
+    </footer>
+</body>
+</html>
